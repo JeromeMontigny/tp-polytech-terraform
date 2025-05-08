@@ -1,0 +1,19 @@
+{
+	"name": "Terraform Development Container",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"features": {
+		"ghcr.io/devcontainers/features/terraform:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"hashicorp.terraform",
+				"ms-azuretools.vscode-docker"
+			]
+		},
+		"settings": {
+			"terminal.integrated.defaultProfile.linux": "bash"
+		}
+	},
+	"postCreateCommand": "terraform --version"	
+}
