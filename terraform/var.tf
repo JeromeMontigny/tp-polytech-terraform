@@ -15,7 +15,8 @@ variable "snowflake_account" {
     description = "The Snowflake account identifier"
 }
 
-variable "snowflake_region" {
+variable "snowflake_organization" {
     type        = string
-    description = "The Snowflake region"
+    description = "The Snowflake organization"
+    sensitive = true
 }
